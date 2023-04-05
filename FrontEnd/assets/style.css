@@ -3,8 +3,31 @@
    License: none (public domain)
 */
 
-.bleu {
-	color: blue;
+.filters {
+	display: flex;
+	justify-content: center;
+	padding-bottom: 30px;
+}
+
+button {
+	display: flex;
+	font-size: 18px;
+    padding: 15px 15px 15px 16px;
+    color: #1D6154;
+	background-color: white;
+    border-radius: 30px;
+	border: #1D6154 solid 1px;
+    margin: 5px;
+	font-family: 'Syne';
+	font-size: 14px;
+	height: 30px;
+	align-items: center;
+}
+
+button:hover,
+button.active {
+	background-color: #1D6154;
+	color: white;
 }
 
 html, body, div, span, applet, object, iframe,
