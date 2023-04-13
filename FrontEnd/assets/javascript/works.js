@@ -1,3 +1,27 @@
+//page d'édition
+
+if (localStorage.getItem("token")) {
+    console.log("token ok");
+    const banner = document.createElement("div");
+    banner.classList.add("banner");
+    const header = document.querySelector("header");
+
+    document.querySelector("header").insertBefore(banner, header.children[0]);
+
+    const icon = document.createElement("i");
+    icon.classList.add("fa-solid", "fa-pen-to-square");
+    document.querySelector(".banner").appendChild(icon);
+
+    const bannerText = document.createElement("p");
+    bannerText.innerText = "Mode édition";
+    document.querySelector(".banner").appendChild(bannerText);
+
+    const editButton = document.createElement("button");
+    editButton.id = "edit";
+    editButton.innerText = "publier les changements";
+    document.querySelector(".banner").appendChild(editButton);
+}
+
 //On stocke le contenu de l'API dans le loocalStorage pour pouvoir l'utiliser sur toutes les pages
 const url = "http://localhost:5678/api/works";
 
@@ -70,6 +94,7 @@ const setCategorie = (categories) => {
     //Affichage des catégories
     for (const categorie of categories) {
         const categorieElement = document.createElement("button");
+        categorieElement.classList.add("filter_button");
         document.querySelector(".filters").appendChild(categorieElement);
 
         categorieElement.innerText = categorie.name;

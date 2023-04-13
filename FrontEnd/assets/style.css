@@ -9,7 +9,7 @@
 	padding-bottom: 30px;
 }
 
-button {
+.filter_button {
 	display: flex;
 	font-size: 18px;
     padding: 15px 15px 15px 16px;
@@ -24,8 +24,8 @@ button {
 	align-items: center;
 }
 
-button:hover,
-button.active {
+.filter_button:hover,
+.filter_button.active {
 	background-color: #1D6154;
 	color: white;
 }
@@ -85,7 +85,34 @@ body {
 	font-family: 'Work Sans' ;
 	font-size: 14px;
 }
-header {
+.banner{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: black;
+	color: white;
+	height: 50px;
+}
+.banner i {
+	margin-right: 5px;
+}
+.banner p {
+	margin-right: 10px;
+}
+#edit {
+	font-family: 'Work Sans';
+	color: black;
+	background-color: #E5E5E5;
+	display: flex;
+	align-items: center;
+    padding: 15px 15px 15px 16px;
+    border-radius: 30px;
+	border: black solid 1px;
+    margin: 5px;
+	font-size: 14px;
+	height: 35px;
+}
+.menu {
 	display: flex;
 	justify-content: space-between;
 	margin: 50px 0
